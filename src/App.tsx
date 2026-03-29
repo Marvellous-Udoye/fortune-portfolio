@@ -1,25 +1,42 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import { PageLayout } from './components/page-layout'
-import { ScrollToTop } from './components/scroll-to-top'
-import { AboutPage } from './pages/about-page'
-import { HomePage } from './pages/home-page'
-import { NotFoundPage } from './pages/not-found-page'
-import { ProjectPage } from './pages/project-page'
+import { useGSAP } from '@gsap/react'
+import gsap from 'gsap'
+import { ScrollSmoother, ScrollTrigger, SplitText } from 'gsap/all'
+import { Navbar } from './components/Navbar'
+import { BenefitSection } from './sections/BenefitSection'
+import { FlavorSection } from './sections/FlavorSection'
+import { FooterSection } from './sections/FooterSection'
+import { HeroSection } from './sections/HeroSection'
+import { MessageSection } from './sections/MessageSection'
+import { NutritionSection } from './sections/NutritionSection'
+import { TestimonialSection } from './sections/TestimonialSection'
+
+gsap.registerPlugin(useGSAP, ScrollTrigger, ScrollSmoother, SplitText)
 
 function App() {
+  useGSAP(() => {
+    ScrollSmoother.create({
+      smooth: 3,
+      effects: true,
+    })
+  })
+
   return (
-    <BrowserRouter>
-      <ScrollToTop />
-      <Routes>
-        <Route element={<PageLayout />}>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/work/:slug" element={<ProjectPage />} />
-          <Route path="/404" element={<NotFoundPage />} />
-          <Route path="*" element={<NotFoundPage />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <main>
+      <Navbar />
+      <div id="smooth-wrapper">
+        <div id="smooth-content">
+          <HeroSection />
+          <MessageSection />
+          <FlavorSection />
+          <NutritionSection />
+          <div>
+            <BenefitSection />
+            <TestimonialSection />
+          </div>
+          <FooterSection />
+        </div>
+      </div>
+    </main>
   )
 }
 
