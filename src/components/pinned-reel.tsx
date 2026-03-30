@@ -2,7 +2,7 @@ import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { useMediaQuery } from 'react-responsive'
 
-export function VideoPinSection() {
+export function PinnedReel() {
   const isMobile = useMediaQuery({ query: '(max-width: 768px)' })
 
   useGSAP(() => {

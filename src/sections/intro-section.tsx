@@ -2,7 +2,7 @@ import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { SplitText } from 'gsap/all'
 
-export function MessageSection() {
+export function IntroSection() {
   useGSAP(() => {
     const firstMsgSplit = SplitText.create('.first-message', {
       type: 'words',

@@ -4,7 +4,7 @@ import { useRef } from 'react'
 import { useMediaQuery } from 'react-responsive'
 import { testimonialCards } from '../data/home-content'
 
-export function TestimonialSection() {
+export function FeaturedWorkSection() {
   const videoRefs = useRef<(HTMLVideoElement | null)[]>([])
   const isMobile = useMediaQuery({ query: '(max-width: 768px)' })
 

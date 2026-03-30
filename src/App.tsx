@@ -1,14 +1,14 @@
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { ScrollSmoother, ScrollTrigger, SplitText } from 'gsap/all'
-import { Navbar } from './components/Navbar'
-import { BenefitSection } from './sections/BenefitSection'
-import { FlavorSection } from './sections/FlavorSection'
-import { FooterSection } from './sections/FooterSection'
-import { HeroSection } from './sections/HeroSection'
-import { MessageSection } from './sections/MessageSection'
-import { NutritionSection } from './sections/NutritionSection'
-import { TestimonialSection } from './sections/TestimonialSection'
+import { SiteNav } from './components/site-nav'
+import { FeaturedProjectsSection } from './sections/featured-projects-section'
+import { FeaturedWorkSection } from './sections/featured-work-section'
+import { FooterSection } from './sections/footer-section'
+import { HeroSection } from './sections/hero-section'
+import { IntroSection } from './sections/intro-section'
+import { ServicesSection } from './sections/services-section'
+import { StatsSection } from './sections/stats-section'
 
 gsap.registerPlugin(useGSAP, ScrollTrigger, ScrollSmoother, SplitText)
 
@@ -22,16 +22,16 @@ function App() {
 
   return (
     <main>
-      <Navbar />
+      <SiteNav />
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <HeroSection />
-          <MessageSection />
-          <FlavorSection />
-          <NutritionSection />
+          <IntroSection />
+          <FeaturedProjectsSection />
+          <StatsSection />
           <div>
-            <BenefitSection />
-            <TestimonialSection />
+            <ServicesSection />
+            <FeaturedWorkSection />
           </div>
           <FooterSection />
         </div>

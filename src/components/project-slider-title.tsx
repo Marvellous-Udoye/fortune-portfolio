@@ -2,7 +2,7 @@ import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { SplitText } from 'gsap/all'
 
-export function FlavorTitle() {
+export function ProjectSliderTitle() {
   useGSAP(() => {
     const firstTextSplit = SplitText.create('.first-text-split h1', {
       type: 'chars',
