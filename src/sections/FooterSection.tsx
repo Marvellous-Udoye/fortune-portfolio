@@ -1,7 +1,7 @@
-import { useMediaQuery } from 'react-responsive'
+// import { useMediaQuery } from 'react-responsive'
 
 export function FooterSection() {
-  const isMobile = useMediaQuery({ query: '(max-width: 768px)' })
+  // const isMobile = useMediaQuery({ query: '(max-width: 768px)' })
 
   return (
     <section className="footer-section">
@@ -18,7 +18,7 @@ export function FooterSection() {
           </h1>
         </div>
 
-        {isMobile ? (
+        {/* {isMobile ? (
           <></>
         ) : (
           <video
@@ -28,7 +28,7 @@ export function FooterSection() {
             muted
             className="pointer-events-none absolute top-0 object-contain mix-blend-lighten lg:-translate-y-1/5"
           />
-        )}
+        )} */}
 
         <div className="relative z-10 mt-5 flex-center gap-5 md:mt-20">
           <div className="social-btn">

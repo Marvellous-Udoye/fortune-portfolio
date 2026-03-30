@@ -36,7 +36,7 @@ export function VideoPinSection() {
         }}
         className="video-box size-full"
       >
-        <video src="/videos/pin-video.mp4" playsInline muted loop autoPlay />
+        <video src="https://res.cloudinary.com/ds6nd4lbj/video/upload/v1774892801/pin-video_jn0cwr.mp4" playsInline muted loop autoPlay />
 
         <div className="abs-center scale-200 md:scale-100">
           <img

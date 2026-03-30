@@ -80,7 +80,7 @@ export function HeroSection() {
           </>
         ) : (
           <video
-            src="/videos/hero-bg.mp4"
+            src="https://res.cloudinary.com/ds6nd4lbj/video/upload/v1774892841/hero-bg_dzovjw.mp4"
             autoPlay
             playsInline
             muted
