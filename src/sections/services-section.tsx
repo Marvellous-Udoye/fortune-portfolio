@@ -1,9 +1,9 @@
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
-import { ClipPathTitle } from '../components/ClipPathTitle'
-import { VideoPinSection } from '../components/VideoPinSection'
+import { HighlightTitle } from '../components/highlight-title'
+import { PinnedReel } from '../components/pinned-reel'
 
-export function BenefitSection() {
+export function ServicesSection() {
   useGSAP(() => {
     const revealTl = gsap.timeline({
       delay: 1,
@@ -53,28 +53,28 @@ export function BenefitSection() {
           </p>
 
           <div className="col-center mt-20">
-            <ClipPathTitle
+            <HighlightTitle
               title="Graphic Design"
               color="#16181d"
               bg="#f6944d"
               className="first-title"
               borderColor="#16181d"
             />
-            <ClipPathTitle
+            <HighlightTitle
               title="3D Illustration"
               color="#16181d"
               bg="#facc15"
               className="second-title"
               borderColor="#16181d"
             />
-            <ClipPathTitle
+            <HighlightTitle
               title="Motion Design"
               color="#16181d"
               bg="#fb7185"
               className="third-title"
               borderColor="#16181d"
             />
-            <ClipPathTitle
+            <HighlightTitle
               title="Art Direction"
               color="#16181d"
               bg="#d9dce3"
@@ -90,7 +90,7 @@ export function BenefitSection() {
       </div>
 
       <div className="relative overflow-box">
-        <VideoPinSection />
+        <PinnedReel />
       </div>
     </section>
   )

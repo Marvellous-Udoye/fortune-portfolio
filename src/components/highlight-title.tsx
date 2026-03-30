@@ -1,4 +1,4 @@
-type ClipPathTitleProps = {
+type HighlightTitleProps = {
   title: string
   color: string
   bg: string
@@ -6,13 +6,13 @@ type ClipPathTitleProps = {
   borderColor: string
 }
 
-export function ClipPathTitle({
+export function HighlightTitle({
   title,
   color,
   bg,
   className,
   borderColor,
-}: ClipPathTitleProps) {
+}: HighlightTitleProps) {
   return (
     <div className="general-title">
       <div

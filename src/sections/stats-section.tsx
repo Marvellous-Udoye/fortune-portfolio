@@ -4,7 +4,7 @@ import { SplitText } from 'gsap/all'
 import { useMediaQuery } from 'react-responsive'
 import { nutrientLists } from '../data/home-content'
 
-export function NutritionSection() {
+export function StatsSection() {
   const isMobile = useMediaQuery({ query: '(max-width: 768px)' })
   const lists = isMobile ? nutrientLists.slice(0, 3) : nutrientLists
 

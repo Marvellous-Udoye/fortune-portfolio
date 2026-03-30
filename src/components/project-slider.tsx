@@ -4,7 +4,7 @@ import { useRef } from 'react'
 import { useMediaQuery } from 'react-responsive'
 import { flavorLists } from '../data/home-content'
 
-export function FlavorSlider() {
+export function ProjectSlider() {
   const sliderRef = useRef<HTMLDivElement | null>(null)
   const isTablet = useMediaQuery({ query: '(max-width: 1024px)' })
 
